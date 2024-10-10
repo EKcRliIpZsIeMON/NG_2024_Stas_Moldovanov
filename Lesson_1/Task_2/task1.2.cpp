@@ -3,34 +3,22 @@
 using namespace std;
 
 int main() {
-    double num1, num2;
-    char char1;
-
-    cout << "input number1" ;
+    int num1, num2, res;
+    char math;
+    
+    cout << "Enter number 1: " ;
     cin >> num1;
-    cout << "input number2" ;
+    cout << "Enter number 2: " ;
     cin >> num2;
 
-    cout << "input(+, -, , )" ;
-    cin >> char1;
-
-    double resul;
-    switch (char1) {
-    case '+':
-        resul = num1 + num2;
-        cout << "Результат: " << resul << endl;
-    case '-':
-        resul = num1 - num2;
-        cout << "Resul: " << resul << endl;
-    case '*':
-        resul = num1 * num2;
-        cout << "Resul: " << resul << endl;
-    case '/':
-        if (num2 != 0) {
-            resul = num1 / num2;
-            cout << "Resul: " << resul << endl;
-        } else {
-            cout << "Error: division by zero" << endl;
-        }
+    cout << "Enter char(+, -, , /): " ;
+    cin >> math;
+    
+    switch(math) {
+    case '+': res = num1 + num2; break ;
+    case '-': res = num1 - num2; break ;
+    case '*': res = num1 * num2; break ;
+    case '/': res = num1 / num2; break ;
     }
+    cout << res;
 }
