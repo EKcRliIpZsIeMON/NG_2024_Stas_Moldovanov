@@ -13,6 +13,7 @@ int main() {
         "You are a millionaire"
     };
 
+    // :,)
     int index = (salary < 1000) * 0 +
                 (salary >= 1000 && salary < 1000000) * 1 +
                 (salary > 1000000) * 2;
