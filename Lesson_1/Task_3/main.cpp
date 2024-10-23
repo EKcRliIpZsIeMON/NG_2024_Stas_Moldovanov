@@ -6,7 +6,7 @@ int main() {
     int num1, num2, res;
     char math;
     
-    cout << "Enter number 1: " ;
+    cout << "Calculator" << endl << "Enter number 1: " ;
     cin >> num1;
     cout << "Enter number 2: " ;
     cin >> num2;
