@@ -2,27 +2,26 @@
 
 using namespace std;
 
-void Tree(int height) {
-    for (int i = 0; i < height; ++i) {
-        for (int j = 0; j < height - i - 1; ++j) {
+void DrawTree(int treeHeight) {
+    for (int row = 0; row < treeHeight; ++row) {
+        for (int space = 0; space < treeHeight - row - 1; ++space) {
             cout << ' ';
         }
-        for (int j = 0; j < 2 * i + 1; ++j) {
+        for (int star = 0; star < 2 * row + 1; ++star) {
             cout << '*';
         }
         cout << endl;
     }
-    
-    
-    for (int j = 0; j < height - 1; ++j) {
-    cout << ' ' ;
+
+    for (int space = 0; space < treeHeight - 1; ++space) {
+        cout << ' ';
     }
-    cout << '*' ;
+    cout << '*';
 }
 
 int main() {
     int height;
     cout << "Enter the height: ";
     cin >> height;
-    Tree(height);
+    DrawTree(height);
 }
