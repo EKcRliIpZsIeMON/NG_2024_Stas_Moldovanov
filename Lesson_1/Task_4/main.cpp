@@ -7,16 +7,15 @@ int main() {
     cout << "Enter your salary: ";
     cin >> salary;
 
-    const char* messages[] = {
-        "You need to work harde",
-        "You are well done",
-        "You are a millionaire"
-    };
-
-    // :,)
-    int index = (salary < 1000) * 0 +
-                (salary >= 1000 && salary < 1000000) * 1 +
-                (salary > 1000000) * 2;
-                
-    cout << messages[index];
+    if (salary < 1000) {
+        cout << "You need to work more" << endl;
+    }
+    if (salary > 999) {
+        if (salary < 1000000) {
+            cout << "You are doing great" << endl;
+        }
+    }
+    if (salary > 999999) {
+        cout << "You are a millionaire" << endl;
+    }
 }
