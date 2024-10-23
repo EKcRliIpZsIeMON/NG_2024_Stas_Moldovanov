@@ -11,7 +11,7 @@ int main() {
     cout << "Enter number 2: " ;
     cin >> num2;
 
-    cout << "Enter char(+, -, , /): " ;
+    cout << "Enter an action(+, -, , /): " ;
     cin >> math;
     
     switch(math) {
